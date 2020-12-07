@@ -22,8 +22,8 @@
 <body>
 <div class="container">
 	<header class="well">
-		<h1>大原簿記法律専門学校柏校</h1>
-		<h2>システム開発コース</h2>
+		<h1>ポートフォリオサイト</h1>
+		<h2>原田　千穂</h2>
 	</header>
 	<div class="row">
 		<div class="col-sm-3">
@@ -32,8 +32,8 @@
 					<h3 class="panel-title"><span class="glyphicon glyphicon-cutlery"></span>&nbsp;メニュー</h3>
 				</div>
 				<ul class="nav nav-pills nav-stacked">
-					<li><a href="${ pageContext.request.contextPath }/blog">ブログ</a></li>
-					<li><a href="${ pageContext.request.contextPath }/dummy">ダミー</a></li>
+					<li><a href="${ pageContext.request.contextPath }/blog">SKILL</a></li>
+					<li><a href="${ pageContext.request.contextPath }/dummy">WORKS</a></li>
 				</ul>
 			</div>
 			<module:User />

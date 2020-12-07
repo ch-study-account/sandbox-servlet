@@ -33,13 +33,14 @@
 		c.set(Calendar.DAY_OF_MONTH, nEndDate);
 		Date end = c.getTime();
 		ArrayList<CalendarEntry> list = CalendarBean.getAllEntries(user.getUserId(), start, end);
+		//必要なデータを
 		int count = 1;
 		for (int i = 1; i < nStartDay; i++) {
 			out.print("<td></td>");
 			count++;
 		}
 		for (int i = 1; i <= nEndDate; i++) {
-			if (list.size() > 0) out.print(list.get(i - 1).getFormat(i));
+			if (list.size() > 0) out.print(list.get(i - 1).getFormat(i));//データが入っているか
 			//out.print("<td>"+i+"</td>");
 			if (count % 7 + 1 == Calendar.SUNDAY)
 				out.print("</tr>");

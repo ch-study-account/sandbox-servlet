@@ -37,7 +37,7 @@ public class CalendarBean implements Serializable {
 	public static ArrayList<CalendarEntry> getAllEntries(String userId, java.util.Date dateStart, java.util.Date dateEnd) {
 		ArrayList<CalendarEntry> list = new ArrayList<CalendarEntry>();
 		ArrayList<CalendarBean> in = new CalendarDAO().findEntries(userId, new Date(dateStart.getTime()), new Date(dateEnd.getTime()));
-		Calendar cal = Calendar.getInstance();
+		Calendar cal = Calendar.getInstance();//ユーザー名と日付などを入れる
 		
 		//System.out.println(in.size());
 		cal.setTime(dateStart);

@@ -15,7 +15,7 @@ public class CalendarEntry implements Serializable {
 	public void setDate(Date date) { this.date = date;}
 	public Date getDate() { return this.date; }
 
-	public String getFormat(int date) {
+	public String getFormat(int date) {//何か入っていればリンクが出るようになる
 		if (this.getDate()!=null) {
 			return "<td class='warning'><a href='./CalendarEntry?date="
 					+this.getDate().toString()+"'>"+date+"</a></td>";
